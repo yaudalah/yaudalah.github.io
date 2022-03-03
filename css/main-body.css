@@ -62,13 +62,15 @@
     }
 
     .gallery-iteminfo {
-        opacity: 1;
         position: relative;
-        flex-direction: row;
-        justify-content: space-between;
-        color: white;
-        font-weight: unset;
         background-color: transparent;
-        margin-bottom: 1em;
+        justify-content: flex-end;
+        font-weight: bold;
+        color: white;
+        opacity: 1;
+        width: auto;
+        height: auto;
+        color: black;
+        font-weight: 100;
     }
 }
