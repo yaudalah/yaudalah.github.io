@@ -61,7 +61,11 @@
 
 .gallery-iteminfo:hover {
     opacity: 1;
-    transition: 350ms;
+    transition: all 350ms ease-in;
+}
+
+.gallery-iteminfo:not(:hover) {
+    transition: all 650ms ease;
 }
 
 .gallery-iteminfo img {
