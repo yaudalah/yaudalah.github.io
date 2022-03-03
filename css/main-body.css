@@ -1,3 +1,11 @@
+.gallery-tablink {
+    border-top: 1px solid #c9c9c9;
+    margin-top: 1em;
+    justify-content: center;
+    column-gap: 1em;
+    padding-top: 0;
+}
+
 .gallery-tablink > a {
     text-decoration: none;
     color: black;
@@ -49,6 +57,7 @@
 
 .gallery-iteminfo:hover {
     opacity: 1;
+    transition: 350ms;
 }
 
 .gallery-iteminfo img {
