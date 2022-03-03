@@ -14,7 +14,7 @@
     display: flex;
     align-content: stretch;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 30%;
 }
 
@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 900px) {
     .container {
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -61,7 +61,6 @@
     .profile-summary {
         width: 75%;
         margin-left: 1.5em;
-        font-size: x-small;
     }
 
     .profile-summary > h1 {
@@ -69,7 +68,7 @@
     }
 
     .profile-stats {
-        flex-direction: row;
+        flex-direction: column;
         row-gap: .5em;
     }
 

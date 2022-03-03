@@ -1,3 +1,7 @@
+.dislike {
+    filter: invert(100%);
+}
+
 .gallery-tablink {
     border-top: 1px solid #c9c9c9;
     margin-top: 1em;
@@ -65,6 +69,11 @@
 }
 
 @media screen and (max-width: 480px) {
+
+    .dislike {
+        filter: invert(0%);
+    }
+
     .gallery-frame {
         width: 100%;
         height: auto;
