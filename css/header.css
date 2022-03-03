@@ -27,6 +27,7 @@
 
 .profile-summary > h1 {
     font-weight: 400;
+    margin:0;
 }
 
 .profile-stats {
