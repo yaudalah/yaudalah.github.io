@@ -43,7 +43,7 @@
     font-weight: bold;
     background-color: rgba(0, 0, 0, .5);
     color: white;
-    justify-content: center;
+    justify-content:space-evenly;
 }
 
 .gallery-iteminfo:hover {
@@ -64,7 +64,7 @@
     .gallery-iteminfo {
         position: relative;
         background-color: transparent;
-        justify-content: flex-end;
+        justify-content: space-between;
         font-weight: bold;
         color: white;
         opacity: 1;

@@ -69,6 +69,7 @@
     .profile-summary {
         width: 75%;
         margin-left: 1.5em;
+        font-size: x-small;
     }
 
     .profile-summary > h1 {
@@ -76,8 +77,9 @@
     }
 
     .profile-stats {
-        flex-direction: column;
+        flex-direction: row;
         row-gap: .5em;
     }
+
 }
 
