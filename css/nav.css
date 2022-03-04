@@ -28,9 +28,8 @@ nav {
     z-index: 1;
     width: 6em;
     padding: 1px;
-    padding-left: 3px;
 }
-/* 
+
 .nav-menu:hover > .nav-menudropdown {   
     visibility: visible;
 }
@@ -63,5 +62,6 @@ nav {
 }
 
 .nav-menudropdown a:hover {
-    background-color: #c9c9c9;
-} */
+    background-color: #f1f1f1;
+    color: #0099ff;
+}
