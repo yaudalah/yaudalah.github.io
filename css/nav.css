@@ -106,6 +106,10 @@ nav form input:focus {
     box-shadow: 0 0 5px #c9c9c9;
 }
 
+.nav-mobile {
+    display: none;
+}
+
 
 @media screen and (max-width: 1200px) {
     nav form {
@@ -116,5 +120,36 @@ nav form input:focus {
 @media screen and (max-width: 480px) {
     nav form {
         display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        justify-content: space-around;
+        background-color: #ffffff;
+        z-index: 1;
+        height: 2em;
+        padding: 1em;
+        box-shadow: 0 0 5px #c9c9c9;
+    }
+
+    .nav-mobile a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-mobile a img {
+        height: 100%;
+    }
+
+    .nav-profile {
+        border-radius: 50%;
+        border: 1px solid #c9c9c9;
     }
 }
