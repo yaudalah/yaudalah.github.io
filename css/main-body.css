@@ -113,21 +113,20 @@
     .add-post-mobile {
         display: flex;
         justify-content: center;
+        align-items: center;
         padding: .6em;
         position: fixed;
         z-index: 1;
-        bottom: 0;
-        right: 0;
+        bottom: 2.5em;
+        right: .9em;
         width: 56px;
         height: 56px;
         border: 0px solid;
         border-radius: 50%;
         background-color: #0099ff;
         color: white;
-        font-size: x-large;
+        font-size: xx-large;
         text-shadow: 1.5px 1px #555;
-        margin-bottom: 70px;
-        margin-right: 20px;
         cursor: pointer;
     }
 

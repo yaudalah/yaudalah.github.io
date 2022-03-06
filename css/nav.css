@@ -134,7 +134,7 @@ nav form input:focus {
         justify-content: space-around;
         background-color: #ffffff;
         z-index: 1;
-        height: 2em;
+        height: 1.5em;
         padding: 1em;
         box-shadow: 0 0 5px #c9c9c9;
     }
@@ -145,7 +145,7 @@ nav form input:focus {
     }
 
     .nav-mobile a img {
-        height: 100%;
+        height: 28px;
     }
 
     .nav-profile {
