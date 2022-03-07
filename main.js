@@ -1,35 +1,18 @@
 function calculateTax(taxYear, name, annualIncome, marriageStatus, dependentChildrenCount) {
     console.log(taxYear, name, annualIncome, marriageStatus, dependentChildrenCount)
     
-    let pajak = 0;
-    let pph = annualIncome - 50000000;
-    let pphMenikah = annualIncome - (60000000 + (dependentChildrenCount * 15000000));
-    let pphCerai = annualIncome - (70000000 + (dependentChildrenCount * 15000000)); 
-    let ptkpAnak = 15000000;
-
-    if (annualIncome > 50000000 && annualIncome <= 200000001 && marriageStatus == 'Lajang') {
-        pajak = pph * .10;
-
-    } else if (annualIncome > 60000000 && annualIncome < 450000001 && marriageStatus == 'Menikah' && dependentChildrenCount >0) {
-        pajak = pphMenikah * .10;
-
-    }else if (annualIncome > 60000000 && annualIncome > 450000001 && marriageStatus == 'Menikah' && dependentChildrenCount >0) {
-        pajak = pphMenikah * .20;
-
-    }else if (annualIncome > 70000000 && marriageStatus == 'Cerai'  && dependentChildrenCount > 0) {
-        pajak = pphCerai * .10;
-
-    }else if (annualIncome > 70000000 && annualIncome > 450000001 && marriageStatus == 'Cerai'  && dependentChildrenCount > 0) {
-        pajak = pphCerai * .20;
-
-    } else if(annualIncome > 200000001 && annualIncome <= 450000001) {
-        pajak = pph * .15;
-
-    } else if(annualIncome > 450000001 && marriageStatus == 'Lajang') {
-        pajak = pph * .20;
-
-    }
-
-    return pajak;
-
+    let ptkp = 50000000;
+    
+    if (marriageStatus == "Menikah") {
+        ptkp = 60000000 + (15000000 * dependentChildrenCount)
+    }else if (marriageStatus == "Cerai"){
+        ptkp = 70000000 + (15000000 * dependentChildrenCount)
+    } 
+    
+    let pph = annualIncome - ptkp;
+    
+    if (pph <= 0) return 0;
+    else if (pph < 200000001) return pph *= .10;
+    else if (pph < 450000001) return pph *= .15;
+    else if (pph > 450000000) return pph *= .20;    
 }
