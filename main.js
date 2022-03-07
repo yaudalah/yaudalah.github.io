@@ -8,11 +8,17 @@ function calculateTax(taxYear, name, annualIncome, marriageStatus, dependentChil
     }else if (marriageStatus == "Cerai"){
         ptkp = 70000000 + (dependentChildrenCount * 15000000)
     } 
+
+    let pkp = annualIncome - ptkp;
+    let pph = pkp * 0.1;
+
+    pkp -= 200000000;
+    if (pkp < 1) return pph;
+    pph = pph + (pkp * 0.2);
     
-    let pph = annualIncome - ptkp;
-    
-    if (pph <= 0) return 0;
-    else if (pph < 200000001) return pph *= .10;
-    else if (pph < 450000001) return pph *= .15;
-    else if (pph > 450000000) return pph *= .20;    
+    pkp -= 250000000;
+    if (pkp < 1) return pph;
+    pph = pph + (pkp * 0.3);
+
+    return pph;
 }
