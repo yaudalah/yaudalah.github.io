@@ -134,7 +134,7 @@ nav form input:focus {
         justify-content: space-around;
         background-color: #ffffff;
         z-index: 1;
-        height: 1.5em;
+        height: 2em;
         padding: 1em;
         box-shadow: 0 0 5px #c9c9c9;
     }
