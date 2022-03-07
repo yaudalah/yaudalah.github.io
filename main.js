@@ -4,9 +4,9 @@ function calculateTax(taxYear, name, annualIncome, marriageStatus, dependentChil
     let ptkp = 50000000;
     
     if (marriageStatus == "Menikah") {
-        ptkp = 60000000 + (15000000 * dependentChildrenCount)
+        ptkp = 60000000 + (dependentChildrenCount * 15000000)
     }else if (marriageStatus == "Cerai"){
-        ptkp = 70000000 + (15000000 * dependentChildrenCount)
+        ptkp = 70000000 + (dependentChildrenCount * 15000000)
     } 
     
     let pph = annualIncome - ptkp;
